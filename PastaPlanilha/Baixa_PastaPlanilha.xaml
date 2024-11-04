@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Baixa_PastaPlanilha2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1408.8,1718.4" sap2010:WorkflowViewState.IdRef="Baixa_PastaPlanilha2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Baixa_PastaPlanilha2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1408.8,2060.8" sap2010:WorkflowViewState.IdRef="Baixa_PastaPlanilha2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -108,7 +108,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Sequência de ações e manipulações de dados para extração de dados das planilhas de clientes e notas fiscais para envio de dicionário para fila no Orchestrator." DisplayName="Baixa_PastaPlanilha" sap:VirtualizedContainerService.HintSize="512,1653.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Sequência de ações e manipulações de dados para extração de dados das planilhas de clientes e notas fiscais para envio de dicionário para fila no Orchestrator." DisplayName="Baixa_PastaPlanilha" sap:VirtualizedContainerService.HintSize="732.8,1996" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_NotasFiscais" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_NumeroNotas" />
@@ -127,13 +127,13 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Acessa a pasta online que contém as planilhas e baixa ambas." AttachMode="ByInstance" DisplayName="Acessa pasta com planilhas" sap:VirtualizedContainerService.HintSize="449.6,1267.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0530041a-40d8-4f9a-8e00-de4f61447fa7" Version="V2">
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="Acessa a pasta online que contém as planilhas e baixa ambas." AttachMode="ByInstance" DisplayName="Acessa pasta com planilhas" sap:VirtualizedContainerService.HintSize="670.4,116.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="0530041a-40d8-4f9a-8e00-de4f61447fa7" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,987.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,984" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -164,7 +164,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://redesignconsultorialtda-my.sharepoint.com/personal/yago_redesignconsultoria_com_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyago%5Fredesignconsultoria%5Fcom%5Fbr%2FDocuments%2FExerc%C3%ADcio%20DEV%20UiPath%20L3&amp;ga=1" CVScreenId="6c145b2b-5415-42f6-870a-50ef3e243a67" CvElementArea="745, 493, 41, 40" CvType="Button" DesignTimeRectangle="749, 496, 35, 35" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Mais Ações' tag='BUTTON' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aria-label='Mais Ações' tag='BUTTON' type='' class='heroButton_d5a366b9 css-100 heroButton_ac494431' aaname='Mais Ações' /&gt;" Guid="b6f8f612-096c-4d29-9ca5-241d8b4b7be3" InformativeScreenshot="7664f453e0564ee1ea92c5243dd9478c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Exercício DEV UiPath L3 - OneDrive' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="6c145b2b-5415-42f6-870a-50ef3e243a67" CvTextArea="514, 505, 82, 18" CvTextArgument="clients.xlsx" CvType="Text" DesignTimeRectangle="515, 502, 81, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aria-role='button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='SPAN' type='' class='heroTextWithHeroCommandsWrapped_ac494431' aaname='clients.xlsx' check:innerText='clients.xlsx' /&gt;" Guid="808fcd90-3e33-45b0-8332-96107a2feaf6" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -191,7 +191,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://redesignconsultorialtda-my.sharepoint.com/personal/yago_redesignconsultoria_com_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyago%5Fredesignconsultoria%5Fcom%5Fbr%2FDocuments%2FExerc%C3%ADcio%20DEV%20UiPath%20L3&amp;ga=1" CVScreenId="316b4ceb-7952-41db-a051-f75d06d42240" CvTextArea="827, 827, 47, 16" CvTextArgument="Baixar" CvType="Text" DesignTimeRectangle="794, 812, 275, 45" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;button&amp;gt;div' idx='8' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='ms-ContextualMenu-linkContent linkContent-132' tag='DIV' aaname='' check:innerText='&amp;#xD;&amp;#xA;Baixar' /&gt;" Guid="60f8f71a-59f2-48fc-bdef-b191f403d8d9" InformativeScreenshot="e66bbd38b85042264cbe91107793b746.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Exercício DEV UiPath L3 - OneDrive' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="316b4ceb-7952-41db-a051-f75d06d42240" CvTextArea="827, 872, 92, 21" CvTextArgument="Copiar para" CvType="Text" DesignTimeRectangle="794, 857, 275, 45" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;button&amp;gt;div' idx='9' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='ms-ContextualMenu-linkContent linkContent-132' tag='DIV' aaname='' check:innerText='&amp;#xD;&amp;#xA;Copiar para' /&gt;" Guid="3fa3a6ff-ee32-458d-9ce1-9a1326d38ea9" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -239,7 +239,7 @@
               <uix:NHover.Target>
                 <uix:TargetAnchorable BrowserURL="https://redesignconsultorialtda-my.sharepoint.com/personal/yago_redesignconsultoria_com_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyago%5Fredesignconsultoria%5Fcom%5Fbr%2FDocuments%2FExerc%C3%ADcio%20DEV%20UiPath%20L3&amp;ga=1" CVScreenId="648af26a-b2fa-4046-ab60-dbaf3e0af396" CvTextArea="887, 566, 114, 17" CvTextArgument="24 de outubro" CvType="Text" DesignTimeRectangle="875, 546, 162, 61" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='24 de outubro' aria-role='gridcell' idx='2' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='24 de outubro' aria-role='gridcell' type='' tag='DIV' class='odsp-spartan-cell dateField_ac494431 field-Modified-htmlGrid_1' check:innerText='24 de outubro' /&gt;" Guid="91c47681-5f69-4c96-80e4-953c619b1745" InformativeScreenshot="97870471dc64654b28135202c97046d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Exercício DEV UiPath L3 - OneDrive' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="648af26a-b2fa-4046-ab60-dbaf3e0af396" CvElementArea="826, 563, 26, 24" CvTextArea="514, 566, 205, 20" CvTextArgument="final_detailed_invoices.xlsx" CvType="CloseButton" DesignTimeRectangle="500, 546, 375, 61" FullSelectorArgument="&lt;webctrl aria-role='gridcell' idx='11' tabindex='-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='gridcell' type='' tabindex='-1' tag='DIV' class='odsp-spartan-cell field-LinkFilename-htmlGrid_1 filesNameCell_1d64fcbf hero_ac494431' aaname='' check:innerText='final_detailed_invoices.xlsx' /&gt;" Guid="0b3b266d-2c5d-4480-aa62-994abbf85ba1" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -266,7 +266,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://redesignconsultorialtda-my.sharepoint.com/personal/yago_redesignconsultoria_com_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyago%5Fredesignconsultoria%5Fcom%5Fbr%2FDocuments%2FExerc%C3%ADcio%20DEV%20UiPath%20L3&amp;ga=1" DesignTimeRectangle="749, 557, 35, 35" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='Mais Ações' idx='2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Mais Ações' type='' tag='BUTTON' class='heroButton_d5a366b9 css-100 heroButton_ac494431' aaname='Mais Ações' /&gt;" Guid="7f0d575d-c7f2-46fb-b270-83dbdcd0a0d2" InformativeScreenshot="810de048b281903217da583d7404efb6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Exercício DEV UiPath L3 - OneDrive' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="bde4c2d2-84b9-498b-878f-291d2957a33d" CvTextArea="514, 566, 205, 20" CvTextArgument="final_detailed_invoices.xlsx" CvType="Text" DesignTimeRectangle="515, 563, 199, 23" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='final_detailed_invoices.xlsx' aria-role='button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='final_detailed_invoices.xlsx' aria-role='button' tag='SPAN' type='' class='heroTextWithHeroCommandsWrapped_ac494431' check:innerText='final_detailed_invoices.xlsx' /&gt;" Guid="2114d2f4-f5c1-4172-b682-30f9a4c8fbd3" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -289,7 +289,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Baixar'" sap:VirtualizedContainerService.HintSize="353.6,218.4" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0530041a-40d8-4f9a-8e00-de4f61447fa7" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Baixar'" sap:VirtualizedContainerService.HintSize="353.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0530041a-40d8-4f9a-8e00-de4f61447fa7" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://redesignconsultorialtda-my.sharepoint.com/personal/yago_redesignconsultoria_com_br/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fyago%5Fredesignconsultoria%5Fcom%5Fbr%2FDocuments%2FExerc%C3%ADcio%20DEV%20UiPath%20L3&amp;ga=1" CVScreenId="316b4ceb-7952-41db-a051-f75d06d42240" CvTextArea="827, 827, 47, 16" CvTextArgument="Baixar" CvType="Text" DesignTimeRectangle="794, 812, 275, 45" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;button&amp;gt;div' idx='8' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='ms-ContextualMenu-linkContent linkContent-132' tag='DIV' aaname='' check:innerText='&amp;#xD;&amp;#xA;Baixar' /&gt;" Guid="60f8f71a-59f2-48fc-bdef-b191f403d8d9" InformativeScreenshot="e66bbd38b85042264cbe91107793b746.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Exercício DEV UiPath L3 - OneDrive' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -324,13 +324,13 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:FileExistsX DisplayName="Documento Cliente Existe" Exists="[bl_ClienteExiste]" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="C:\Users\nome.do.usuario\Downloads\clients.xlsx">
+    <ui:FileExistsX DisplayName="Documento Cliente Existe" Exists="[bl_ClienteExiste]" sap:VirtualizedContainerService.HintSize="670.4,56.8" sap2010:WorkflowViewState.IdRef="FileExistsX_1" Path="C:\Users\nome.do.usuario\Downloads\clients.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -338,7 +338,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:FileExistsX>
-    <ui:FileExistsX DisplayName="Documento Notas Fiscais Existe" Exists="[bl_NotaExiste]" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="C:\Users\nome.do.usuario\Downloads\final_detailed_invoices.xlsx">
+    <ui:FileExistsX DisplayName="Documento Notas Fiscais Existe" Exists="[bl_NotaExiste]" sap:VirtualizedContainerService.HintSize="670.4,56.8" sap2010:WorkflowViewState.IdRef="FileExistsX_2" Path="C:\Users\nome.do.usuario\Downloads\final_detailed_invoices.xlsx">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -346,23 +346,23 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:FileExistsX>
-    <If sap2010:Annotation.AnnotationText="Faz uma verificação para saber se todos os documentos foram salvos corretamente e se é possível acessar" Condition="[bl_ClienteExiste And bl_NotaExiste]" DisplayName="Verifica se os documentos existem" sap:VirtualizedContainerService.HintSize="449.6,140" sap2010:WorkflowViewState.IdRef="If_2">
+    <If sap2010:Annotation.AnnotationText="Faz uma verificação para saber se todos os documentos foram salvos corretamente e se é possível acessar" Condition="[bl_ClienteExiste And bl_NotaExiste]" DisplayName="Verifica se os documentos existem" sap:VirtualizedContainerService.HintSize="670.4,1632.8" sap2010:WorkflowViewState.IdRef="If_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="636.8,1237.6" sap2010:WorkflowViewState.IdRef="Sequence_5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Clientes]" DisplayName="Ler Planilha de Cliente" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="clients" WorkbookPath="C:\Users\nome.do.usuario\Downloads\clients.xlsx">
+          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_Clientes]" DisplayName="Ler Planilha de Cliente" sap:VirtualizedContainerService.HintSize="574.4,56.8" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="clients" WorkbookPath="C:\Users\nome.do.usuario\Downloads\clients.xlsx">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -370,7 +370,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ReadRange>
-          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_NotasFiscais]" DisplayName="Ler Planilha de Notas" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="final_detailed_invoices" WorkbookPath="C:\Users\nome.do.usuario\Downloads\final_detailed_invoices.xlsx">
+          <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dt_NotasFiscais]" DisplayName="Ler Planilha de Notas" sap:VirtualizedContainerService.HintSize="574.4,56.8" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="final_detailed_invoices" WorkbookPath="C:\Users\nome.do.usuario\Downloads\final_detailed_invoices.xlsx">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -378,7 +378,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:ReadRange>
-          <Assign DisplayName="Filtrar Notas e remover duplicatas" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_1">
+          <Assign DisplayName="Filtrar Notas e remover duplicatas" sap:VirtualizedContainerService.HintSize="574.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_1">
             <Assign.To>
               <OutArgument x:TypeArguments="sd:DataTable">[dt_NumeroNotas]</OutArgument>
             </Assign.To>
@@ -392,13 +392,13 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
-          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For Each para agrupar todas as ordens de compra de uma nota fiscal, buscar o cliente associado e enviar para fila como um dicionario em formato de String" DataTable="[dt_NumeroNotas]" DisplayName="Looping para junção de todas as ordens de compra" sap:VirtualizedContainerService.HintSize="353.6,156" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="For Each para agrupar todas as ordens de compra de uma nota fiscal, buscar o cliente associado e enviar para fila como um dicionario em formato de String" DataTable="[dt_NumeroNotas]" DisplayName="Looping para junção de todas as ordens de compra" sap:VirtualizedContainerService.HintSize="574.4,978.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
             <ui:ForEachRow.Body>
               <ActivityAction x:TypeArguments="sd:DataRow">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Nota" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="540.8,745.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="sd:DataTable" Name="dt_ClienteReference" />
                     <Variable x:TypeArguments="x:String" Name="jsonCliente" />
@@ -406,11 +406,11 @@
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Assign DisplayName="Agrupa ordens de compra de uma nota fiscal" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign DisplayName="Agrupa ordens de compra de uma nota fiscal" sap:VirtualizedContainerService.HintSize="478.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_2">
                     <Assign.To>
                       <OutArgument x:TypeArguments="sd:DataTable">[dt_GrupoNotas]</OutArgument>
                     </Assign.To>
@@ -426,7 +426,7 @@ Select row).CopyToDataTable]</InArgument>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <Assign DisplayName="Captura o cliente associado" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_5">
+                  <Assign DisplayName="Captura o cliente associado" sap:VirtualizedContainerService.HintSize="478.4,56.8" sap2010:WorkflowViewState.IdRef="Assign_5">
                     <Assign.To>
                       <OutArgument x:TypeArguments="sd:DataTable">[dt_ClienteReference]</OutArgument>
                     </Assign.To>
@@ -442,7 +442,7 @@ Select cliente).CopyToDataTable]</InArgument>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <ui:MultipleAssign DisplayName="Transforma em string e coloca em um dicionário" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                  <ui:MultipleAssign DisplayName="Transforma em string e coloca em um dicionário" sap:VirtualizedContainerService.HintSize="478.4,212" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                     <ui:MultipleAssign.AssignOperations>
                       <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                         <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -473,12 +473,12 @@ Select cliente).CopyToDataTable]</InArgument>
                     </ui:MultipleAssign.AssignOperations>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:MultipleAssign>
-                  <Assign DisplayName="Transforma o dicionário em string" sap:VirtualizedContainerService.HintSize="353.6,56.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+                  <Assign DisplayName="Transforma o dicionário em string" sap:VirtualizedContainerService.HintSize="478.4,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[jsonData]</OutArgument>
                     </Assign.To>
@@ -487,18 +487,18 @@ Select cliente).CopyToDataTable]</InArgument>
                     </Assign.Value>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </Assign>
-                  <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Envia item de fila" FolderPath="Developers/Daniel Philipi" sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="UiPathL3Lite">
+                  <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Envia item de fila" FolderPath="Developers/Daniel Philipi" sap:VirtualizedContainerService.HintSize="478.4,217.6" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" Priority="Normal" QueueType="UiPathL3Lite">
                     <ui:AddQueueItem.ItemInformation>
-                      <InArgument x:TypeArguments="x:String" x:Key="&quot;NotasFiscais'">[jsonData]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="NotasFiscais">[jsonData]</InArgument>
                     </ui:AddQueueItem.ItemInformation>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -509,7 +509,7 @@ Select cliente).CopyToDataTable]</InArgument>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
